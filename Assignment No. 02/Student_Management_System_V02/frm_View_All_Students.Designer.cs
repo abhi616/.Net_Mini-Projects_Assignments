@@ -31,31 +31,31 @@
             this.components = new System.ComponentModel.Container();
             this.lbl_Header = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_Back = new System.Windows.Forms.Button();
-            this.btn_Search_Student = new System.Windows.Forms.Button();
-            this.btn_Log_Out = new System.Windows.Forms.Button();
-            this.student_Management_System_DBDataSet = new Student_Management_System_V02.Student_Management_System_DBDataSet();
-            this.studentDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.student_DetailsTableAdapter = new Student_Management_System_V02.Student_Management_System_DBDataSetTableAdapters.Student_DetailsTableAdapter();
             this.rollNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.student_Management_System_DBDataSet = new Student_Management_System_V02.Student_Management_System_DBDataSet();
+            this.btn_Back = new System.Windows.Forms.Button();
+            this.btn_Search_Student = new System.Windows.Forms.Button();
+            this.btn_Log_Out = new System.Windows.Forms.Button();
+            this.student_DetailsTableAdapter = new Student_Management_System_V02.Student_Management_System_DBDataSetTableAdapters.Student_DetailsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_Management_System_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_Management_System_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Header
             // 
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl_Header.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.Brown;
-            this.lbl_Header.Location = new System.Drawing.Point(184, 32);
+            this.lbl_Header.Location = new System.Drawing.Point(162, 31);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(264, 43);
+            this.lbl_Header.Size = new System.Drawing.Size(307, 42);
             this.lbl_Header.TabIndex = 0;
             this.lbl_Header.Text = "View All Students";
             // 
@@ -78,6 +78,51 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(654, 207);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // rollNoDataGridViewTextBoxColumn
+            // 
+            this.rollNoDataGridViewTextBoxColumn.DataPropertyName = "Roll_No";
+            this.rollNoDataGridViewTextBoxColumn.HeaderText = "Roll_No";
+            this.rollNoDataGridViewTextBoxColumn.Name = "rollNoDataGridViewTextBoxColumn";
+            this.rollNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dOBDataGridViewTextBoxColumn
+            // 
+            this.dOBDataGridViewTextBoxColumn.DataPropertyName = "DOB";
+            this.dOBDataGridViewTextBoxColumn.HeaderText = "DOB";
+            this.dOBDataGridViewTextBoxColumn.Name = "dOBDataGridViewTextBoxColumn";
+            this.dOBDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // courseDataGridViewTextBoxColumn
+            // 
+            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
+            this.courseDataGridViewTextBoxColumn.HeaderText = "Course";
+            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
+            this.courseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cityDataGridViewTextBoxColumn
+            // 
+            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            this.cityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // studentDetailsBindingSource
+            // 
+            this.studentDetailsBindingSource.DataMember = "Student_Details";
+            this.studentDetailsBindingSource.DataSource = this.student_Management_System_DBDataSet;
+            // 
+            // student_Management_System_DBDataSet
+            // 
+            this.student_Management_System_DBDataSet.DataSetName = "Student_Management_System_DBDataSet";
+            this.student_Management_System_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_Back
             // 
@@ -118,60 +163,15 @@
             this.btn_Log_Out.UseVisualStyleBackColor = false;
             this.btn_Log_Out.Click += new System.EventHandler(this.btn_Log_Out_Click);
             // 
-            // student_Management_System_DBDataSet
-            // 
-            this.student_Management_System_DBDataSet.DataSetName = "Student_Management_System_DBDataSet";
-            this.student_Management_System_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentDetailsBindingSource
-            // 
-            this.studentDetailsBindingSource.DataMember = "Student_Details";
-            this.studentDetailsBindingSource.DataSource = this.student_Management_System_DBDataSet;
-            // 
             // student_DetailsTableAdapter
             // 
             this.student_DetailsTableAdapter.ClearBeforeFill = true;
-            // 
-            // rollNoDataGridViewTextBoxColumn
-            // 
-            this.rollNoDataGridViewTextBoxColumn.DataPropertyName = "Roll_No";
-            this.rollNoDataGridViewTextBoxColumn.HeaderText = "Roll_No";
-            this.rollNoDataGridViewTextBoxColumn.Name = "rollNoDataGridViewTextBoxColumn";
-            this.rollNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dOBDataGridViewTextBoxColumn
-            // 
-            this.dOBDataGridViewTextBoxColumn.DataPropertyName = "DOB";
-            this.dOBDataGridViewTextBoxColumn.HeaderText = "DOB";
-            this.dOBDataGridViewTextBoxColumn.Name = "dOBDataGridViewTextBoxColumn";
-            this.dOBDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // courseDataGridViewTextBoxColumn
-            // 
-            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
-            this.courseDataGridViewTextBoxColumn.HeaderText = "Course";
-            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
-            this.courseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            this.cityDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // frm_View_All_Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(640, 405);
             this.Controls.Add(this.btn_Log_Out);
             this.Controls.Add(this.btn_Search_Student);
@@ -185,8 +185,8 @@
             this.Text = "View All Students";
             this.Load += new System.EventHandler(this.frm_View_All_Students_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_Management_System_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_Management_System_DBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

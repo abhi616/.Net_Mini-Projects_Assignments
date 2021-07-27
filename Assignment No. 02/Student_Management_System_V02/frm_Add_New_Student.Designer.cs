@@ -48,11 +48,11 @@
             // 
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.BackColor = System.Drawing.Color.LightGreen;
-            this.lbl_Header.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_Header.Location = new System.Drawing.Point(175, 32);
+            this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Header.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbl_Header.Location = new System.Drawing.Point(147, 30);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(260, 43);
+            this.lbl_Header.Size = new System.Drawing.Size(302, 42);
             this.lbl_Header.TabIndex = 0;
             this.lbl_Header.Text = "Add New Student";
             // 
@@ -120,7 +120,7 @@
             this.tb_Roll_No.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Roll_No.Location = new System.Drawing.Point(297, 121);
             this.tb_Roll_No.Name = "tb_Roll_No";
-            this.tb_Roll_No.Size = new System.Drawing.Size(188, 21);
+            this.tb_Roll_No.Size = new System.Drawing.Size(215, 21);
             this.tb_Roll_No.TabIndex = 1;
             // 
             // tb_Name
@@ -128,7 +128,7 @@
             this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Name.Location = new System.Drawing.Point(297, 173);
             this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(188, 21);
+            this.tb_Name.Size = new System.Drawing.Size(215, 21);
             this.tb_Name.TabIndex = 2;
             // 
             // dtp_DOB
@@ -136,7 +136,7 @@
             this.dtp_DOB.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_DOB.Location = new System.Drawing.Point(297, 226);
             this.dtp_DOB.Name = "dtp_DOB";
-            this.dtp_DOB.Size = new System.Drawing.Size(188, 21);
+            this.dtp_DOB.Size = new System.Drawing.Size(215, 21);
             this.dtp_DOB.TabIndex = 3;
             // 
             // cmb_Course
@@ -155,7 +155,7 @@
             "MBA"});
             this.cmb_Course.Location = new System.Drawing.Point(297, 280);
             this.cmb_Course.Name = "cmb_Course";
-            this.cmb_Course.Size = new System.Drawing.Size(188, 23);
+            this.cmb_Course.Size = new System.Drawing.Size(215, 23);
             this.cmb_Course.TabIndex = 4;
             // 
             // cmb_City
@@ -171,9 +171,9 @@
             "Solapur",
             "Aurangabad",
             "Mumbai"});
-            this.cmb_City.Location = new System.Drawing.Point(297, 331);
+            this.cmb_City.Location = new System.Drawing.Point(297, 329);
             this.cmb_City.Name = "cmb_City";
-            this.cmb_City.Size = new System.Drawing.Size(188, 23);
+            this.cmb_City.Size = new System.Drawing.Size(215, 23);
             this.cmb_City.TabIndex = 5;
             // 
             // btn_Log_Out
@@ -219,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(625, 451);
             this.Controls.Add(this.btn_View_All_Student);
             this.Controls.Add(this.btn_Save);
