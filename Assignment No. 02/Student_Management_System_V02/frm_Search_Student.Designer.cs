@@ -43,14 +43,15 @@
             this.cmb_Course = new System.Windows.Forms.ComboBox();
             this.cmb_City = new System.Windows.Forms.ComboBox();
             this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_Search_Student_By_Course = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Header
             // 
             this.lbl_Header.AutoSize = true;
-            this.lbl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl_Header.BackColor = System.Drawing.Color.MintCream;
             this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_Header.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.lbl_Header.Location = new System.Drawing.Point(224, 25);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(265, 42);
@@ -120,9 +121,9 @@
             // btn_Refresh
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.Black;
-            this.btn_Refresh.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Refresh.Location = new System.Drawing.Point(74, 388);
+            this.btn_Refresh.Location = new System.Drawing.Point(47, 398);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(101, 34);
             this.btn_Refresh.TabIndex = 7;
@@ -133,11 +134,11 @@
             // btn_Back
             // 
             this.btn_Back.BackColor = System.Drawing.Color.Black;
-            this.btn_Back.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Back.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Back.Location = new System.Drawing.Point(418, 388);
+            this.btn_Back.Location = new System.Drawing.Point(586, 398);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(111, 34);
+            this.btn_Back.Size = new System.Drawing.Size(105, 34);
             this.btn_Back.TabIndex = 8;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
@@ -146,11 +147,11 @@
             // btn_Log_Out
             // 
             this.btn_Log_Out.BackColor = System.Drawing.Color.Black;
-            this.btn_Log_Out.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Log_Out.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Log_Out.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Log_Out.Location = new System.Drawing.Point(625, 12);
+            this.btn_Log_Out.Location = new System.Drawing.Point(667, 12);
             this.btn_Log_Out.Name = "btn_Log_Out";
-            this.btn_Log_Out.Size = new System.Drawing.Size(75, 28);
+            this.btn_Log_Out.Size = new System.Drawing.Size(89, 36);
             this.btn_Log_Out.TabIndex = 9;
             this.btn_Log_Out.Text = "Log Out";
             this.btn_Log_Out.UseVisualStyleBackColor = false;
@@ -159,36 +160,36 @@
             // tb_Roll_No
             // 
             this.tb_Roll_No.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Roll_No.Location = new System.Drawing.Point(298, 102);
+            this.tb_Roll_No.Location = new System.Drawing.Point(327, 110);
             this.tb_Roll_No.Name = "tb_Roll_No";
-            this.tb_Roll_No.Size = new System.Drawing.Size(185, 21);
+            this.tb_Roll_No.Size = new System.Drawing.Size(220, 21);
             this.tb_Roll_No.TabIndex = 1;
             // 
             // tb_Name
             // 
             this.tb_Name.Enabled = false;
             this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Name.Location = new System.Drawing.Point(298, 161);
+            this.tb_Name.Location = new System.Drawing.Point(327, 161);
             this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(185, 19);
+            this.tb_Name.Size = new System.Drawing.Size(220, 19);
             this.tb_Name.TabIndex = 3;
             // 
             // dtp_DOB
             // 
             this.dtp_DOB.Enabled = false;
             this.dtp_DOB.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_DOB.Location = new System.Drawing.Point(298, 208);
+            this.dtp_DOB.Location = new System.Drawing.Point(327, 208);
             this.dtp_DOB.Name = "dtp_DOB";
-            this.dtp_DOB.Size = new System.Drawing.Size(185, 21);
+            this.dtp_DOB.Size = new System.Drawing.Size(220, 21);
             this.dtp_DOB.TabIndex = 4;
             // 
             // cmb_Course
             // 
             this.cmb_Course.Enabled = false;
             this.cmb_Course.FormattingEnabled = true;
-            this.cmb_Course.Location = new System.Drawing.Point(298, 259);
+            this.cmb_Course.Location = new System.Drawing.Point(327, 256);
             this.cmb_Course.Name = "cmb_Course";
-            this.cmb_Course.Size = new System.Drawing.Size(185, 21);
+            this.cmb_Course.Size = new System.Drawing.Size(220, 21);
             this.cmb_Course.TabIndex = 5;
             // 
             // cmb_City
@@ -196,9 +197,9 @@
             this.cmb_City.Enabled = false;
             this.cmb_City.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_City.FormattingEnabled = true;
-            this.cmb_City.Location = new System.Drawing.Point(298, 306);
+            this.cmb_City.Location = new System.Drawing.Point(327, 304);
             this.cmb_City.Name = "cmb_City";
-            this.cmb_City.Size = new System.Drawing.Size(185, 23);
+            this.cmb_City.Size = new System.Drawing.Size(220, 23);
             this.cmb_City.TabIndex = 6;
             // 
             // btn_Search
@@ -206,7 +207,7 @@
             this.btn_Search.BackColor = System.Drawing.Color.Black;
             this.btn_Search.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Search.Location = new System.Drawing.Point(534, 91);
+            this.btn_Search.Location = new System.Drawing.Point(602, 102);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(89, 32);
             this.btn_Search.TabIndex = 2;
@@ -214,12 +215,26 @@
             this.btn_Search.UseVisualStyleBackColor = false;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
+            // btn_Search_Student_By_Course
+            // 
+            this.btn_Search_Student_By_Course.BackColor = System.Drawing.Color.Black;
+            this.btn_Search_Student_By_Course.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search_Student_By_Course.ForeColor = System.Drawing.Color.Aqua;
+            this.btn_Search_Student_By_Course.Location = new System.Drawing.Point(231, 398);
+            this.btn_Search_Student_By_Course.Name = "btn_Search_Student_By_Course";
+            this.btn_Search_Student_By_Course.Size = new System.Drawing.Size(258, 34);
+            this.btn_Search_Student_By_Course.TabIndex = 10;
+            this.btn_Search_Student_By_Course.Text = "Search Student By Course";
+            this.btn_Search_Student_By_Course.UseVisualStyleBackColor = false;
+            this.btn_Search_Student_By_Course.Click += new System.EventHandler(this.btn_Search_Student_By_Course_Click);
+            // 
             // frm_Search_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(712, 443);
+            this.ClientSize = new System.Drawing.Size(768, 466);
+            this.Controls.Add(this.btn_Search_Student_By_Course);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.cmb_City);
             this.Controls.Add(this.cmb_Course);
@@ -238,6 +253,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Search_Student";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Student";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -261,5 +277,6 @@
         private System.Windows.Forms.ComboBox cmb_Course;
         private System.Windows.Forms.ComboBox cmb_City;
         private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btn_Search_Student_By_Course;
     }
 }

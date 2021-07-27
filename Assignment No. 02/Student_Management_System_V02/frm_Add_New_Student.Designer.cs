@@ -42,15 +42,16 @@
             this.btn_Log_Out = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_View_All_Student = new System.Windows.Forms.Button();
+            this.btn_Update_Details = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Header
             // 
             this.lbl_Header.AutoSize = true;
-            this.lbl_Header.BackColor = System.Drawing.Color.LightGreen;
+            this.lbl_Header.BackColor = System.Drawing.Color.MintCream;
             this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbl_Header.Location = new System.Drawing.Point(147, 30);
+            this.lbl_Header.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lbl_Header.Location = new System.Drawing.Point(198, 32);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(302, 42);
             this.lbl_Header.TabIndex = 0;
@@ -118,25 +119,25 @@
             // tb_Roll_No
             // 
             this.tb_Roll_No.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Roll_No.Location = new System.Drawing.Point(297, 121);
+            this.tb_Roll_No.Location = new System.Drawing.Point(346, 121);
             this.tb_Roll_No.Name = "tb_Roll_No";
-            this.tb_Roll_No.Size = new System.Drawing.Size(215, 21);
+            this.tb_Roll_No.Size = new System.Drawing.Size(229, 21);
             this.tb_Roll_No.TabIndex = 1;
             // 
             // tb_Name
             // 
             this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Name.Location = new System.Drawing.Point(297, 173);
+            this.tb_Name.Location = new System.Drawing.Point(346, 173);
             this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(215, 21);
+            this.tb_Name.Size = new System.Drawing.Size(229, 21);
             this.tb_Name.TabIndex = 2;
             // 
             // dtp_DOB
             // 
             this.dtp_DOB.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_DOB.Location = new System.Drawing.Point(297, 226);
+            this.dtp_DOB.Location = new System.Drawing.Point(346, 226);
             this.dtp_DOB.Name = "dtp_DOB";
-            this.dtp_DOB.Size = new System.Drawing.Size(215, 21);
+            this.dtp_DOB.Size = new System.Drawing.Size(229, 21);
             this.dtp_DOB.TabIndex = 3;
             // 
             // cmb_Course
@@ -153,10 +154,11 @@
             "MSC",
             "MCA",
             "MBA"});
-            this.cmb_Course.Location = new System.Drawing.Point(297, 280);
+            this.cmb_Course.Location = new System.Drawing.Point(346, 275);
             this.cmb_Course.Name = "cmb_Course";
-            this.cmb_Course.Size = new System.Drawing.Size(215, 23);
+            this.cmb_Course.Size = new System.Drawing.Size(229, 23);
             this.cmb_Course.TabIndex = 4;
+            this.cmb_Course.SelectedIndexChanged += new System.EventHandler(this.cmb_Course_SelectedIndexChanged);
             // 
             // cmb_City
             // 
@@ -171,9 +173,9 @@
             "Solapur",
             "Aurangabad",
             "Mumbai"});
-            this.cmb_City.Location = new System.Drawing.Point(297, 329);
+            this.cmb_City.Location = new System.Drawing.Point(346, 327);
             this.cmb_City.Name = "cmb_City";
-            this.cmb_City.Size = new System.Drawing.Size(215, 23);
+            this.cmb_City.Size = new System.Drawing.Size(229, 23);
             this.cmb_City.TabIndex = 5;
             // 
             // btn_Log_Out
@@ -181,10 +183,10 @@
             this.btn_Log_Out.BackColor = System.Drawing.Color.Black;
             this.btn_Log_Out.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Log_Out.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Log_Out.Location = new System.Drawing.Point(512, 12);
+            this.btn_Log_Out.Location = new System.Drawing.Point(608, 12);
             this.btn_Log_Out.Name = "btn_Log_Out";
             this.btn_Log_Out.Size = new System.Drawing.Size(101, 35);
-            this.btn_Log_Out.TabIndex = 8;
+            this.btn_Log_Out.TabIndex = 9;
             this.btn_Log_Out.Text = "Log Out";
             this.btn_Log_Out.UseVisualStyleBackColor = false;
             this.btn_Log_Out.Click += new System.EventHandler(this.btn_Log_Out_Click);
@@ -194,9 +196,9 @@
             this.btn_Save.BackColor = System.Drawing.Color.Black;
             this.btn_Save.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Save.Location = new System.Drawing.Point(67, 404);
+            this.btn_Save.Location = new System.Drawing.Point(44, 416);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(86, 35);
+            this.btn_Save.Size = new System.Drawing.Size(96, 35);
             this.btn_Save.TabIndex = 6;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
@@ -207,20 +209,34 @@
             this.btn_View_All_Student.BackColor = System.Drawing.Color.Black;
             this.btn_View_All_Student.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_View_All_Student.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_View_All_Student.Location = new System.Drawing.Point(327, 404);
+            this.btn_View_All_Student.Location = new System.Drawing.Point(205, 416);
             this.btn_View_All_Student.Name = "btn_View_All_Student";
-            this.btn_View_All_Student.Size = new System.Drawing.Size(185, 35);
+            this.btn_View_All_Student.Size = new System.Drawing.Size(206, 35);
             this.btn_View_All_Student.TabIndex = 7;
             this.btn_View_All_Student.Text = "View All Student";
             this.btn_View_All_Student.UseVisualStyleBackColor = false;
             this.btn_View_All_Student.Click += new System.EventHandler(this.btn_View_All_Student_Click);
+            // 
+            // btn_Update_Details
+            // 
+            this.btn_Update_Details.BackColor = System.Drawing.Color.Black;
+            this.btn_Update_Details.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_Details.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Update_Details.Location = new System.Drawing.Point(451, 416);
+            this.btn_Update_Details.Name = "btn_Update_Details";
+            this.btn_Update_Details.Size = new System.Drawing.Size(234, 35);
+            this.btn_Update_Details.TabIndex = 8;
+            this.btn_Update_Details.Text = "Update Student Detail";
+            this.btn_Update_Details.UseVisualStyleBackColor = false;
+            this.btn_Update_Details.Click += new System.EventHandler(this.btn_Update_Details_Click);
             // 
             // frm_Add_New_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(625, 451);
+            this.ClientSize = new System.Drawing.Size(728, 483);
+            this.Controls.Add(this.btn_Update_Details);
             this.Controls.Add(this.btn_View_All_Student);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_Log_Out);
@@ -261,5 +277,6 @@
         private System.Windows.Forms.Button btn_Log_Out;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_View_All_Student;
+        private System.Windows.Forms.Button btn_Update_Details;
     }
 }

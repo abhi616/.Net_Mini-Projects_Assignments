@@ -64,6 +64,18 @@
     <Compile Include="frm_Search_Student.Designer.cs">
       <DependentUpon>frm_Search_Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Search_Student_By_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Student_By_Course.Designer.cs">
+      <DependentUpon>frm_Search_Student_By_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Student_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Student_Detail.Designer.cs">
+      <DependentUpon>frm_Update_Student_Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_View_All_Students.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Search_Student.resx">
       <DependentUpon>frm_Search_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Search_Student_By_Course.resx">
+      <DependentUpon>frm_Search_Student_By_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Student_Detail.resx">
+      <DependentUpon>frm_Update_Student_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_View_All_Students.resx">
       <DependentUpon>frm_View_All_Students.cs</DependentUpon>

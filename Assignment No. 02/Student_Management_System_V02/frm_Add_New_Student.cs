@@ -99,6 +99,21 @@ namespace Student_Management_System_V02
             this.Hide();
         }
 
+        private void cmb_Course_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Update_Details_Click(object sender, EventArgs e)
+        {
+            frm_Update_Student_Detail Obj = new frm_Update_Student_Detail();
+
+            Obj.Show();
+            this.Hide();
+        }
+
+        
+
         
     }
 }

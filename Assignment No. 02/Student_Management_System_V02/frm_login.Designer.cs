@@ -39,10 +39,10 @@
             // lbl_Header
             // 
             this.lbl_Header.AutoSize = true;
-            this.lbl_Header.BackColor = System.Drawing.Color.LightGreen;
+            this.lbl_Header.BackColor = System.Drawing.Color.MintCream;
             this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_Header.Location = new System.Drawing.Point(183, 29);
+            this.lbl_Header.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lbl_Header.Location = new System.Drawing.Point(201, 28);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(112, 42);
             this.lbl_Header.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.btn_Submit.BackColor = System.Drawing.Color.Silver;
             this.btn_Submit.Enabled = false;
             this.btn_Submit.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Submit.Location = new System.Drawing.Point(181, 272);
+            this.btn_Submit.Location = new System.Drawing.Point(181, 284);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(96, 31);
             this.btn_Submit.TabIndex = 3;
@@ -86,9 +86,9 @@
             // tb_Username
             // 
             this.tb_Username.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Username.Location = new System.Drawing.Point(251, 120);
+            this.tb_Username.Location = new System.Drawing.Point(274, 120);
             this.tb_Username.Name = "tb_Username";
-            this.tb_Username.Size = new System.Drawing.Size(168, 21);
+            this.tb_Username.Size = new System.Drawing.Size(184, 21);
             this.tb_Username.TabIndex = 1;
             this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
@@ -96,11 +96,11 @@
             // 
             this.tb_Password.Enabled = false;
             this.tb_Password.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Password.Location = new System.Drawing.Point(251, 192);
+            this.tb_Password.Location = new System.Drawing.Point(274, 191);
             this.tb_Password.MaxLength = 8;
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.PasswordChar = '#';
-            this.tb_Password.Size = new System.Drawing.Size(168, 21);
+            this.tb_Password.Size = new System.Drawing.Size(184, 21);
             this.tb_Password.TabIndex = 2;
             this.tb_Password.TextChanged += new System.EventHandler(this.tb_Password_TextChanged);
             // 
@@ -109,7 +109,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(497, 338);
+            this.ClientSize = new System.Drawing.Size(529, 376);
             this.Controls.Add(this.tb_Password);
             this.Controls.Add(this.tb_Username);
             this.Controls.Add(this.btn_Submit);

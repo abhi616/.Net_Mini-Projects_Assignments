@@ -50,10 +50,10 @@
             // lbl_Header
             // 
             this.lbl_Header.AutoSize = true;
-            this.lbl_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl_Header.BackColor = System.Drawing.Color.White;
             this.lbl_Header.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.ForeColor = System.Drawing.Color.Brown;
-            this.lbl_Header.Location = new System.Drawing.Point(162, 31);
+            this.lbl_Header.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lbl_Header.Location = new System.Drawing.Point(182, 30);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(307, 42);
             this.lbl_Header.TabIndex = 0;
@@ -73,10 +73,10 @@
             this.courseDataGridViewTextBoxColumn,
             this.cityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.studentDetailsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(-5, 98);
+            this.dataGridView1.Location = new System.Drawing.Point(-5, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(654, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(711, 207);
             this.dataGridView1.TabIndex = 1;
             // 
             // rollNoDataGridViewTextBoxColumn
@@ -129,11 +129,11 @@
             this.btn_Back.BackColor = System.Drawing.Color.Black;
             this.btn_Back.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Back.Location = new System.Drawing.Point(53, 342);
+            this.btn_Back.Location = new System.Drawing.Point(67, 352);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(86, 41);
+            this.btn_Back.Size = new System.Drawing.Size(188, 41);
             this.btn_Back.TabIndex = 1;
-            this.btn_Back.Text = "Back";
+            this.btn_Back.Text = "Add New Student";
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
@@ -142,7 +142,7 @@
             this.btn_Search_Student.BackColor = System.Drawing.Color.Black;
             this.btn_Search_Student.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search_Student.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Search_Student.Location = new System.Drawing.Point(362, 342);
+            this.btn_Search_Student.Location = new System.Drawing.Point(427, 352);
             this.btn_Search_Student.Name = "btn_Search_Student";
             this.btn_Search_Student.Size = new System.Drawing.Size(164, 41);
             this.btn_Search_Student.TabIndex = 2;
@@ -155,7 +155,7 @@
             this.btn_Log_Out.BackColor = System.Drawing.Color.Black;
             this.btn_Log_Out.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Log_Out.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Log_Out.Location = new System.Drawing.Point(544, 12);
+            this.btn_Log_Out.Location = new System.Drawing.Point(608, 12);
             this.btn_Log_Out.Name = "btn_Log_Out";
             this.btn_Log_Out.Size = new System.Drawing.Size(84, 29);
             this.btn_Log_Out.TabIndex = 3;
@@ -172,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(640, 405);
+            this.ClientSize = new System.Drawing.Size(706, 437);
             this.Controls.Add(this.btn_Log_Out);
             this.Controls.Add(this.btn_Search_Student);
             this.Controls.Add(this.btn_Back);

@@ -103,5 +103,13 @@ namespace Student_Management_System_V02
             Obj.Show();
             this.Hide();
         }
+
+        private void btn_Search_Student_By_Course_Click(object sender, EventArgs e)
+        {
+            frm_Search_Student_By_Course Obj = new frm_Search_Student_By_Course();
+
+            Obj.Show();
+            this.Hide();
+        }
     }
 }
