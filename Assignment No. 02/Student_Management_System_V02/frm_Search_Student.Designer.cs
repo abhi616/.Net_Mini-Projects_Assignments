@@ -136,11 +136,11 @@
             this.btn_Back.BackColor = System.Drawing.Color.Black;
             this.btn_Back.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Back.Location = new System.Drawing.Point(586, 398);
+            this.btn_Back.Location = new System.Drawing.Point(536, 398);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(105, 34);
+            this.btn_Back.Size = new System.Drawing.Size(178, 34);
             this.btn_Back.TabIndex = 8;
-            this.btn_Back.Text = "Back";
+            this.btn_Back.Text = "Add New Student";
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 

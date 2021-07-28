@@ -72,10 +72,10 @@
             // 
             // btn_Submit
             // 
-            this.btn_Submit.BackColor = System.Drawing.Color.Silver;
+            this.btn_Submit.BackColor = System.Drawing.Color.Tomato;
             this.btn_Submit.Enabled = false;
             this.btn_Submit.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Submit.Location = new System.Drawing.Point(181, 284);
+            this.btn_Submit.Location = new System.Drawing.Point(208, 285);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(96, 31);
             this.btn_Submit.TabIndex = 3;

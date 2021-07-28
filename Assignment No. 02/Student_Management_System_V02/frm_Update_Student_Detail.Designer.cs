@@ -43,6 +43,7 @@
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Add_New_Student = new System.Windows.Forms.Button();
+            this.btn_View_All_Students = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Header
@@ -122,6 +123,7 @@
             // 
             // tb_Name
             // 
+            this.tb_Name.Enabled = false;
             this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Name.Location = new System.Drawing.Point(308, 185);
             this.tb_Name.Name = "tb_Name";
@@ -130,6 +132,7 @@
             // 
             // dtp_DOB
             // 
+            this.dtp_DOB.Enabled = false;
             this.dtp_DOB.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_DOB.Location = new System.Drawing.Point(308, 239);
             this.dtp_DOB.Name = "dtp_DOB";
@@ -138,6 +141,7 @@
             // 
             // cmb_Course
             // 
+            this.cmb_Course.Enabled = false;
             this.cmb_Course.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Course.FormattingEnabled = true;
             this.cmb_Course.Items.AddRange(new object[] {
@@ -157,6 +161,7 @@
             // 
             // cmb_City
             // 
+            this.cmb_City.Enabled = false;
             this.cmb_City.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_City.FormattingEnabled = true;
             this.cmb_City.Items.AddRange(new object[] {
@@ -194,9 +199,10 @@
             this.btn_Search.Location = new System.Drawing.Point(572, 116);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(97, 33);
-            this.btn_Search.TabIndex = 8;
+            this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // btn_Update
             // 
@@ -209,13 +215,14 @@
             this.btn_Update.TabIndex = 7;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Add_New_Student
             // 
             this.btn_Add_New_Student.BackColor = System.Drawing.Color.Black;
             this.btn_Add_New_Student.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add_New_Student.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_Add_New_Student.Location = new System.Drawing.Point(408, 428);
+            this.btn_Add_New_Student.Location = new System.Drawing.Point(495, 428);
             this.btn_Add_New_Student.Name = "btn_Add_New_Student";
             this.btn_Add_New_Student.Size = new System.Drawing.Size(204, 34);
             this.btn_Add_New_Student.TabIndex = 8;
@@ -223,12 +230,26 @@
             this.btn_Add_New_Student.UseVisualStyleBackColor = false;
             this.btn_Add_New_Student.Click += new System.EventHandler(this.btn_Add_New_Student_Click);
             // 
+            // btn_View_All_Students
+            // 
+            this.btn_View_All_Students.BackColor = System.Drawing.Color.Black;
+            this.btn_View_All_Students.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_View_All_Students.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_View_All_Students.Location = new System.Drawing.Point(246, 428);
+            this.btn_View_All_Students.Name = "btn_View_All_Students";
+            this.btn_View_All_Students.Size = new System.Drawing.Size(208, 34);
+            this.btn_View_All_Students.TabIndex = 8;
+            this.btn_View_All_Students.Text = "View All Students";
+            this.btn_View_All_Students.UseVisualStyleBackColor = false;
+            this.btn_View_All_Students.Click += new System.EventHandler(this.btn_View_All_Students_Click);
+            // 
             // frm_Update_Student_Detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(741, 488);
+            this.Controls.Add(this.btn_View_All_Students);
             this.Controls.Add(this.btn_Add_New_Student);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Search);
@@ -271,5 +292,6 @@
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Add_New_Student;
+        private System.Windows.Forms.Button btn_View_All_Students;
     }
 }

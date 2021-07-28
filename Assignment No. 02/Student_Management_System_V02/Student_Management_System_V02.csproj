@@ -89,6 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Student_Management_System_DBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Student_Management_System_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student_Management_System_DBDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Add_New_Student.resx">
       <DependentUpon>frm_Add_New_Student.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +141,17 @@
     </None>
     <None Include="Student_Management_System_DBDataSet.xss">
       <DependentUpon>Student_Management_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Student_Management_System_DBDataSet1.xsc">
+      <DependentUpon>Student_Management_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Student_Management_System_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Student_Management_System_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Student_Management_System_DBDataSet1.xss">
+      <DependentUpon>Student_Management_System_DBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
