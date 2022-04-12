@@ -1,0 +1,4 @@
+D:\C# Assignments\Console Application\LB Assignments\Assignment_01\03\03\bin\Debug\03.exe
+D:\C# Assignments\Console Application\LB Assignments\Assignment_01\03\03\bin\Debug\03.pdb
+D:\C# Assignments\Console Application\LB Assignments\Assignment_01\03\03\obj\x86\Debug\03.exe
+D:\C# Assignments\Console Application\LB Assignments\Assignment_01\03\03\obj\x86\Debug\03.pdb

@@ -1,0 +1,14 @@
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\bin\Debug\Student_Management_System_V02.exe
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\bin\Debug\Student_Management_System_V02.pdb
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_login.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.Properties.Resources.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.csproj.GenerateResource.Cache
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.exe
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.pdb
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Add_New_Student.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.csprojResolveAssemblyReference.cache
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\bin\Debug\Student_Management_System_V02.exe.config
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_View_All_Students.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Search_Student.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Update_Student_Detail.resources
+C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Search_Student_By_Course.resources

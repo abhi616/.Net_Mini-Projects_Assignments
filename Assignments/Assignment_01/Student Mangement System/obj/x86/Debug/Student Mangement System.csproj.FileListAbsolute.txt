@@ -1,0 +1,11 @@
+C:\Abhi C#\Student Mangement System\Student Mangement System\bin\Debug\Student Mangement System.exe
+C:\Abhi C#\Student Mangement System\Student Mangement System\bin\Debug\Student Mangement System.pdb
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student_Mangement_System.frm_Login.resources
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student_Mangement_System.Properties.Resources.resources
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student Mangement System.csproj.GenerateResource.Cache
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student Mangement System.exe
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student Mangement System.pdb
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student_Mangement_System.frm_Add_New_Student.resources
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student Mangement System.csprojResolveAssemblyReference.cache
+C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student_Mangement_System.frm_View_All_Students.resources
+C:\Abhi C#\Student Mangement System\Student Mangement System\bin\Debug\Student Mangement System.exe.config
