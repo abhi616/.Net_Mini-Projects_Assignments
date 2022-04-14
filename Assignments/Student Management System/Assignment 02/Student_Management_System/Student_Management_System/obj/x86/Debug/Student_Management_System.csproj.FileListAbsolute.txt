@@ -1,0 +1,26 @@
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.exe
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.pdb
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_login.resources
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.Properties.Resources.resources
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.csproj.GenerateResource.Cache
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.exe
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.pdb
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.csprojResolveAssemblyReference.cache
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_Add_New_Student.resources
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_View_All_Details.resources
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.exe.config
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_Search_Student_By_ID.resources
+D:\C# Assignments\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_View_Student_By_Course.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.exe.config
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.exe
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.exe
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\bin\Debug\Student_Management_System.pdb
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.csprojResolveAssemblyReference.cache
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_Add_New_Student.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_login.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_Search_Student_By_ID.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_View_All_Details.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.frm_View_Student_By_Course.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.Properties.Resources.resources
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.csproj.GenerateResource.Cache
+D:\C# Assignments\Student Management System\Assignment 02\Student_Management_System\Student_Management_System\obj\x86\Debug\Student_Management_System.pdb

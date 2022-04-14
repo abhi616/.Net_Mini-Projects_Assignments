@@ -1,0 +1,30 @@
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.exe
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.pdb
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_login.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.Properties.Resources.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.csproj.GenerateResource.Cache
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.exe
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.pdb
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_MDI_Student_Management_System.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.csprojResolveAssemblyReference.cache
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Add_New_Student.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Search_Student.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Update_Student.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_View_All_Details.resources
+D:\C# Assignments\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_View_Student_By_Course.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.exe
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.pdb
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.exe
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.pdb
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.csprojResolveAssemblyReference.cache
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Add_New_Student.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_login.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_MDI_Student_Management_System.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Search_Student.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_Update_Student.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_View_All_Details.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_View_Student_By_Course.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.Properties.Resources.resources
+D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.csproj.GenerateResource.Cache
