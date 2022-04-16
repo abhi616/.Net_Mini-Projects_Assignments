@@ -16,3 +16,5 @@ D:\C# Assignments\C# Assignments + Project\Assignments\frm_DB_Creation\frm_DB_Cr
 D:\C# Assignments\C# Assignments + Project\Assignments\frm_DB_Creation\frm_DB_Creation\obj\x86\Debug\frm_DB_Creation.csproj.GenerateResource.Cache
 D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_04\frm_DB_Creation\frm_DB_Creation\obj\x86\Debug\frm_DB_Creation.exe
 D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_04\frm_DB_Creation\frm_DB_Creation\obj\x86\Debug\frm_DB_Creation.pdb
+D:\C# Assignments\C# Assignments + Project\Assignments\Database_Table_Creation\frm_DB_Creation\obj\x86\Debug\frm_DB_Creation.exe
+D:\C# Assignments\C# Assignments + Project\Assignments\Database_Table_Creation\frm_DB_Creation\obj\x86\Debug\frm_DB_Creation.pdb
