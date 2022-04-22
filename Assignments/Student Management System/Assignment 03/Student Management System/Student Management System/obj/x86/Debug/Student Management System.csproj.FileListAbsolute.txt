@@ -28,3 +28,6 @@ D:\C# Assignments\Student Management System\Assignment 03\Student Management Sys
 D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.frm_View_Student_By_Course.resources
 D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student_Management_System.Properties.Resources.resources
 D:\C# Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.csproj.GenerateResource.Cache
+D:\C# Assignments\C# Assignments + Project\Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+D:\C# Assignments\C# Assignments + Project\Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.exe
+D:\C# Assignments\C# Assignments + Project\Assignments\Student Management System\Assignment 03\Student Management System\Student Management System\obj\x86\Debug\Student Management System.pdb
