@@ -43,6 +43,7 @@ namespace Cafe_Management_System
             // 
             this.lbl_Head.AutoSize = true;
             this.lbl_Head.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Head.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.lbl_Head.Location = new System.Drawing.Point(388, 79);
             this.lbl_Head.Name = "lbl_Head";
             this.lbl_Head.Size = new System.Drawing.Size(311, 55);

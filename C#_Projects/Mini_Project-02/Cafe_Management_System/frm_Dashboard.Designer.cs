@@ -35,10 +35,11 @@ namespace Cafe_Management_System
             this.btn_AddItem = new System.Windows.Forms.Button();
             this.btn_PlaceOrder = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_UpdateItem1 = new Cafe_Management_System.UC_UpdateItem();
             this.uC_PlaceOrder1 = new Cafe_Management_System.UC_PlaceOrder();
             this.uC_AddItem = new Cafe_Management_System.UC_AddItem();
             this.uC_Welcome1 = new Cafe_Management_System.UC_Welcome();
-            this.uC_UpdateItem1 = new Cafe_Management_System.UC_UpdateItem();
+            this.uC_DeleteItem1 = new Cafe_Management_System.UC_DeleteItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,7 @@ namespace Cafe_Management_System
             this.button3.TabIndex = 1;
             this.button3.Text = "Remove Items";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_UpdateItem
             // 
@@ -117,6 +119,7 @@ namespace Cafe_Management_System
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_DeleteItem1);
             this.panel2.Controls.Add(this.uC_UpdateItem1);
             this.panel2.Controls.Add(this.uC_PlaceOrder1);
             this.panel2.Controls.Add(this.uC_AddItem);
@@ -125,6 +128,13 @@ namespace Cafe_Management_System
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1107, 840);
             this.panel2.TabIndex = 1;
+            // 
+            // uC_UpdateItem1
+            // 
+            this.uC_UpdateItem1.Location = new System.Drawing.Point(0, 0);
+            this.uC_UpdateItem1.Name = "uC_UpdateItem1";
+            this.uC_UpdateItem1.Size = new System.Drawing.Size(1107, 840);
+            this.uC_UpdateItem1.TabIndex = 3;
             // 
             // uC_PlaceOrder1
             // 
@@ -149,12 +159,12 @@ namespace Cafe_Management_System
             this.uC_Welcome1.Size = new System.Drawing.Size(1107, 840);
             this.uC_Welcome1.TabIndex = 0;
             // 
-            // uC_UpdateItem1
+            // uC_DeleteItem1
             // 
-            this.uC_UpdateItem1.Location = new System.Drawing.Point(0, 0);
-            this.uC_UpdateItem1.Name = "uC_UpdateItem1";
-            this.uC_UpdateItem1.Size = new System.Drawing.Size(1107, 840);
-            this.uC_UpdateItem1.TabIndex = 3;
+            this.uC_DeleteItem1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DeleteItem1.Name = "uC_DeleteItem1";
+            this.uC_DeleteItem1.Size = new System.Drawing.Size(1107, 840);
+            this.uC_DeleteItem1.TabIndex = 4;
             // 
             // frm_Dashboard
             // 
@@ -187,5 +197,6 @@ namespace Cafe_Management_System
         private UC_AddItem uC_AddItem;
         private UC_PlaceOrder uC_PlaceOrder1;
         private UC_UpdateItem uC_UpdateItem1;
+        private UC_DeleteItem uC_DeleteItem1;
     }
 }

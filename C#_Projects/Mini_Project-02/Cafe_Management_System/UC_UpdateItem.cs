@@ -73,5 +73,7 @@ namespace Cafe_Management_System
                 MessageBox.Show("Something Wents Wrong", "Wrong", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
         }
+
+       
     }
 }

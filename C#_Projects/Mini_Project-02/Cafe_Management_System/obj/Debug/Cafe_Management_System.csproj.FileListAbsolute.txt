@@ -13,3 +13,4 @@ D:\MVC\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_S
 D:\MVC\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.UC_AddItem.resources
 D:\MVC\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.UC_PlaceOrder.resources
 D:\MVC\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.UC_UpdateItem.resources
+D:\MVC\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.UC_DeleteItem.resources

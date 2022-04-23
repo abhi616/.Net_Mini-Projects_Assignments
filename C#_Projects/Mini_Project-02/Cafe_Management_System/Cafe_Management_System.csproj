@@ -67,6 +67,12 @@
     <Compile Include="UC_AddItem.Designer.cs">
       <DependentUpon>UC_AddItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_DeleteItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DeleteItem.Designer.cs">
+      <DependentUpon>UC_DeleteItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_PlaceOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="UC_AddItem.resx">
       <DependentUpon>UC_AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DeleteItem.resx">
+      <DependentUpon>UC_DeleteItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_PlaceOrder.resx">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>

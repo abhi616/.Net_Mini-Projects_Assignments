@@ -31,26 +31,26 @@ namespace Cafe_Management_System
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_Category = new System.Windows.Forms.ComboBox();
-            this.tb_Item_Name = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tb_Search = new System.Windows.Forms.TextBox();
+            this.lb_Items = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_ItemName = new System.Windows.Forms.TextBox();
+            this.tb_Price = new System.Windows.Forms.TextBox();
+            this.tb_Total = new System.Windows.Forms.TextBox();
             this.btn_Add_Item = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tb_UpDown = new System.Windows.Forms.NumericUpDown();
+            this.dgv_Order = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_Print = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_UpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Order)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,24 +81,27 @@ namespace Cafe_Management_System
             this.cmb_Category.Name = "cmb_Category";
             this.cmb_Category.Size = new System.Drawing.Size(252, 40);
             this.cmb_Category.TabIndex = 8;
+            this.cmb_Category.SelectedIndexChanged += new System.EventHandler(this.cmb_Category_SelectedIndexChanged);
             // 
-            // tb_Item_Name
+            // tb_Search
             // 
-            this.tb_Item_Name.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Item_Name.Location = new System.Drawing.Point(23, 229);
-            this.tb_Item_Name.Name = "tb_Item_Name";
-            this.tb_Item_Name.Size = new System.Drawing.Size(252, 40);
-            this.tb_Item_Name.TabIndex = 9;
+            this.tb_Search.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Search.Location = new System.Drawing.Point(23, 229);
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Size = new System.Drawing.Size(252, 40);
+            this.tb_Search.TabIndex = 9;
+            this.tb_Search.TextChanged += new System.EventHandler(this.tb_Item_Name_TextChanged);
             // 
-            // listBox1
+            // lb_Items
             // 
-            this.listBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(23, 348);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(252, 429);
-            this.listBox1.TabIndex = 10;
+            this.lb_Items.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Items.FormattingEnabled = true;
+            this.lb_Items.ItemHeight = 25;
+            this.lb_Items.Location = new System.Drawing.Point(23, 348);
+            this.lb_Items.Name = "lb_Items";
+            this.lb_Items.Size = new System.Drawing.Size(252, 429);
+            this.lb_Items.TabIndex = 10;
+            this.lb_Items.SelectedIndexChanged += new System.EventHandler(this.lb_Items_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -151,29 +154,31 @@ namespace Cafe_Management_System
             this.label6.TabIndex = 15;
             this.label6.Text = "Quantity";
             // 
-            // textBox3
+            // tb_ItemName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(397, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(249, 33);
-            this.textBox3.TabIndex = 18;
+            this.tb_ItemName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_ItemName.Location = new System.Drawing.Point(397, 96);
+            this.tb_ItemName.Name = "tb_ItemName";
+            this.tb_ItemName.Size = new System.Drawing.Size(249, 33);
+            this.tb_ItemName.TabIndex = 18;
             // 
-            // textBox1
+            // tb_Price
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(702, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 33);
-            this.textBox1.TabIndex = 19;
+            this.tb_Price.Enabled = false;
+            this.tb_Price.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Price.Location = new System.Drawing.Point(702, 96);
+            this.tb_Price.Name = "tb_Price";
+            this.tb_Price.Size = new System.Drawing.Size(249, 33);
+            this.tb_Price.TabIndex = 19;
             // 
-            // textBox2
+            // tb_Total
             // 
-            this.textBox2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(702, 207);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 33);
-            this.textBox2.TabIndex = 20;
+            this.tb_Total.Enabled = false;
+            this.tb_Total.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Total.Location = new System.Drawing.Point(702, 207);
+            this.tb_Total.Name = "tb_Total";
+            this.tb_Total.Size = new System.Drawing.Size(249, 33);
+            this.tb_Total.TabIndex = 20;
             // 
             // btn_Add_Item
             // 
@@ -189,27 +194,29 @@ namespace Cafe_Management_System
             this.btn_Add_Item.Text = "Add To Cart";
             this.btn_Add_Item.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown1
+            // tb_UpDown
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(397, 207);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(249, 33);
-            this.numericUpDown1.TabIndex = 23;
+            this.tb_UpDown.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UpDown.Location = new System.Drawing.Point(397, 207);
+            this.tb_UpDown.Name = "tb_UpDown";
+            this.tb_UpDown.Size = new System.Drawing.Size(249, 33);
+            this.tb_UpDown.TabIndex = 23;
+            this.tb_UpDown.ValueChanged += new System.EventHandler(this.tb_UpDown_ValueChanged);
             // 
-            // dataGridView1
+            // dgv_Order
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(337, 381);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(716, 281);
-            this.dataGridView1.TabIndex = 24;
+            this.dgv_Order.AllowUserToAddRows = false;
+            this.dgv_Order.AllowUserToDeleteRows = false;
+            this.dgv_Order.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgv_Order.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgv_Order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Order.Location = new System.Drawing.Point(337, 381);
+            this.dgv_Order.Name = "dgv_Order";
+            this.dgv_Order.ReadOnly = true;
+            this.dgv_Order.RowHeadersWidth = 51;
+            this.dgv_Order.RowTemplate.Height = 24;
+            this.dgv_Order.Size = new System.Drawing.Size(716, 281);
+            this.dgv_Order.TabIndex = 24;
             // 
             // groupBox1
             // 
@@ -276,26 +283,26 @@ namespace Cafe_Management_System
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_Print);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.dgv_Order);
+            this.Controls.Add(this.tb_UpDown);
             this.Controls.Add(this.btn_Add_Item);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_Total);
+            this.Controls.Add(this.tb_Price);
+            this.Controls.Add(this.tb_ItemName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.tb_Item_Name);
+            this.Controls.Add(this.lb_Items);
+            this.Controls.Add(this.tb_Search);
             this.Controls.Add(this.cmb_Category);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "UC_PlaceOrder";
             this.Size = new System.Drawing.Size(1107, 840);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_UpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Order)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,19 +312,19 @@ namespace Cafe_Management_System
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_Category;
-        private System.Windows.Forms.TextBox tb_Item_Name;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox tb_Search;
+        private System.Windows.Forms.ListBox lb_Items;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_ItemName;
+        private System.Windows.Forms.TextBox tb_Price;
+        private System.Windows.Forms.TextBox tb_Total;
         private System.Windows.Forms.Button btn_Add_Item;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.NumericUpDown tb_UpDown;
+        private System.Windows.Forms.DataGridView dgv_Order;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_Print;

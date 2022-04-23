@@ -101,6 +101,7 @@ namespace Cafe_Management_System
             this.label2.Size = new System.Drawing.Size(205, 42);
             this.label2.TabIndex = 18;
             this.label2.Text = "Update Item";
+           
             // 
             // dgv_UpdateItem
             // 
