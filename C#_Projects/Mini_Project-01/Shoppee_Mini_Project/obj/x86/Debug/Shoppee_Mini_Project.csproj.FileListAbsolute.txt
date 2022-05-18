@@ -61,3 +61,20 @@ D:\Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_
 D:\C# Assignments\Assignment_Project\Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
 D:\C# Assignments\Assignment_Project\Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
 D:\C# Assignments\Assignment_Project\Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.pdb
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csprojResolveAssemblyReference.cache
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Customer.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Product.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Customer_Menu.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Main_Form.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Login.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Menu.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Update_Product.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Product_List.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Single_Customer_Details.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
