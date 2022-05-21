@@ -123,9 +123,5 @@ namespace OLA_CAB_Management_Syatem
             Clear_Controls();
         }
 
-        private void tb_Name_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
     }
 }

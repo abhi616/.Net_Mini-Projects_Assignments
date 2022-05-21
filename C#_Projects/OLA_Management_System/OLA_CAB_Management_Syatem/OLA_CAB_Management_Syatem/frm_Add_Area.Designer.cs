@@ -155,7 +155,7 @@
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(251, 35);
             this.tb_Name.TabIndex = 50;
-            this.tb_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Name_KeyDown);
+            
             // 
             // tb_Area_Id
             // 
