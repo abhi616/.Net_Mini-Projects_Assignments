@@ -59,7 +59,7 @@ namespace Student_Management_System
 
             Cmd.Connection = Con;
 
-            Cmd.CommandText = "Select * From Student_Login_MDI where Username = @UName And Password = @Pass";
+            Cmd.CommandText = "Select * From Login where Username = @UName And Password = @Pass";
 
             Cmd.Parameters.Add("UName", SqlDbType.NVarChar).Value = tb_Username.Text;
             Cmd.Parameters.Add("Pass", SqlDbType.NVarChar).Value = tb_Password.Text;
