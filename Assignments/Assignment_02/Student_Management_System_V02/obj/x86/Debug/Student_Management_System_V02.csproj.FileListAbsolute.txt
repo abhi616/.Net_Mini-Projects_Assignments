@@ -12,3 +12,6 @@ C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\D
 C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Search_Student.resources
 C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Update_Student_Detail.resources
 C:\Abhi C#\Student_Management_System_V02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.frm_Search_Student_By_Course.resources
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_02\Student_Management_System_V02\bin\Debug\Student_Management_System_V02.exe.config
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.exe
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_02\Student_Management_System_V02\obj\x86\Debug\Student_Management_System_V02.pdb
