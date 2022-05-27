@@ -78,3 +78,5 @@ D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_M
 D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
 D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Single_Customer_Details.resources
 D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Customer_Report.resources
+D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Report.resources

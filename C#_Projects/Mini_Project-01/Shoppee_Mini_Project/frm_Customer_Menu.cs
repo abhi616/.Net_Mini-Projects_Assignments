@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace Shoppee_Mini_Project
 {
@@ -15,6 +16,7 @@ namespace Shoppee_Mini_Project
         {
             InitializeComponent();
         }
+
 
         private void btn_Add_New_Customer_Click(object sender, EventArgs e)
         {
@@ -50,6 +52,13 @@ namespace Shoppee_Mini_Project
             Obj.Show();
 
             this.Hide();
+        }
+
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            frm_Customer_Report cr = new frm_Customer_Report();
+            this.Hide();
+            cr.Show();
         }
     }
 }

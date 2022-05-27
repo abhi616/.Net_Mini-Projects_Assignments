@@ -61,5 +61,12 @@ namespace Shoppee_Mini_Project
             this.Hide();
         }
 
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            frm_Product_Report cr = new frm_Product_Report();
+            this.Hide();
+            cr.Show();
+        }
+
     }
 }
