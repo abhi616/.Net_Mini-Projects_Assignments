@@ -50,9 +50,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(222)))), ((int)(((byte)(35)))));
             this.panel1.Controls.Add(this.lbl_Header);
-            this.panel1.Location = new System.Drawing.Point(-15, -1);
+            this.panel1.Location = new System.Drawing.Point(-11, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2303, 100);
+            this.panel1.Size = new System.Drawing.Size(1727, 81);
             this.panel1.TabIndex = 52;
             // 
             // lbl_Header
@@ -60,9 +61,10 @@
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.White;
-            this.lbl_Header.Location = new System.Drawing.Point(623, -10);
+            this.lbl_Header.Location = new System.Drawing.Point(419, -8);
+            this.lbl_Header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(690, 112);
+            this.lbl_Header.Size = new System.Drawing.Size(551, 89);
             this.lbl_Header.TabIndex = 12;
             this.lbl_Header.Text = "View All Vehicle";
             // 
@@ -80,11 +82,12 @@
             this.ownerNameDataGridViewTextBoxColumn,
             this.vehicleTypeDataGridViewTextBoxColumn});
             this.dgv_View_Vehicle.DataSource = this.vehicleDetailsBindingSource;
-            this.dgv_View_Vehicle.Location = new System.Drawing.Point(68, 197);
+            this.dgv_View_Vehicle.Location = new System.Drawing.Point(-2, 103);
+            this.dgv_View_Vehicle.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_View_Vehicle.Name = "dgv_View_Vehicle";
             this.dgv_View_Vehicle.ReadOnly = true;
             this.dgv_View_Vehicle.RowTemplate.Height = 24;
-            this.dgv_View_Vehicle.Size = new System.Drawing.Size(1786, 699);
+            this.dgv_View_Vehicle.Size = new System.Drawing.Size(1371, 645);
             this.dgv_View_Vehicle.TabIndex = 53;
             // 
             // vehicleIdDataGridViewTextBoxColumn
@@ -138,14 +141,18 @@
             // 
             // frm_View_Vehicle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.ControlBox = false;
             this.Controls.Add(this.dgv_View_Vehicle);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_View_Vehicle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Vehicle";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_View_Vehicle_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

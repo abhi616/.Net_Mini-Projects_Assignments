@@ -57,9 +57,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(222)))), ((int)(((byte)(35)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-13, -2);
+            this.panel1.Location = new System.Drawing.Point(-10, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2303, 100);
+            this.panel1.Size = new System.Drawing.Size(1727, 81);
             this.panel1.TabIndex = 17;
             // 
             // label1
@@ -67,9 +68,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(623, -19);
+            this.label1.Location = new System.Drawing.Point(384, -15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(837, 112);
+            this.label1.Size = new System.Drawing.Size(666, 89);
             this.label1.TabIndex = 12;
             this.label1.Text = "View Car Passenger";
             // 
@@ -94,11 +96,12 @@
             this.areaDataGridViewTextBoxColumn,
             this.chargesDataGridViewTextBoxColumn});
             this.dgv_View_Car_Passenger.DataSource = this.passengerCarDetailsBindingSource;
-            this.dgv_View_Car_Passenger.Location = new System.Drawing.Point(99, 187);
+            this.dgv_View_Car_Passenger.Location = new System.Drawing.Point(-1, 97);
+            this.dgv_View_Car_Passenger.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_View_Car_Passenger.Name = "dgv_View_Car_Passenger";
             this.dgv_View_Car_Passenger.ReadOnly = true;
             this.dgv_View_Car_Passenger.RowTemplate.Height = 24;
-            this.dgv_View_Car_Passenger.Size = new System.Drawing.Size(1739, 701);
+            this.dgv_View_Car_Passenger.Size = new System.Drawing.Size(1381, 664);
             this.dgv_View_Car_Passenger.TabIndex = 18;
             // 
             // passengerIdDataGridViewTextBoxColumn
@@ -201,14 +204,18 @@
             // 
             // frm_View_Car_Passenger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1380, 759);
             this.ControlBox = false;
             this.Controls.Add(this.dgv_View_Car_Passenger);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_View_Car_Passenger";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Car Passenger";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_View_Car_Passenger_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

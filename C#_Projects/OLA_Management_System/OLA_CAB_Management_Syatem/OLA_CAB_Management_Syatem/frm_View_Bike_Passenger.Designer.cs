@@ -32,9 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_View_Bike = new System.Windows.Forms.DataGridView();
-            this.dB_OLA_CAB_Mgt_SystemDataSet3 = new OLA_CAB_Management_Syatem.DB_OLA_CAB_Mgt_SystemDataSet3();
-            this.passengerBikeDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.passenger_Bike_DetailsTableAdapter = new OLA_CAB_Management_Syatem.DB_OLA_CAB_Mgt_SystemDataSet3TableAdapters.Passenger_Bike_DetailsTableAdapter();
             this.passengerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,19 +45,23 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.areaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chargesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passengerBikeDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_OLA_CAB_Mgt_SystemDataSet3 = new OLA_CAB_Management_Syatem.DB_OLA_CAB_Mgt_SystemDataSet3();
+            this.passenger_Bike_DetailsTableAdapter = new OLA_CAB_Management_Syatem.DB_OLA_CAB_Mgt_SystemDataSet3TableAdapters.Passenger_Bike_DetailsTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Bike)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_OLA_CAB_Mgt_SystemDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passengerBikeDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_OLA_CAB_Mgt_SystemDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(222)))), ((int)(((byte)(35)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-6, -1);
+            this.panel1.Location = new System.Drawing.Point(-4, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2303, 100);
+            this.panel1.Size = new System.Drawing.Size(1727, 81);
             this.panel1.TabIndex = 16;
             // 
             // label1
@@ -68,9 +69,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(623, -19);
+            this.label1.Location = new System.Drawing.Point(357, -15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(874, 112);
+            this.label1.Size = new System.Drawing.Size(696, 89);
             this.label1.TabIndex = 12;
             this.label1.Text = "View Bike Passenger";
             // 
@@ -96,26 +98,13 @@
             this.areaDataGridViewTextBoxColumn,
             this.chargesDataGridViewTextBoxColumn});
             this.dgv_View_Bike.DataSource = this.passengerBikeDetailsBindingSource;
-            this.dgv_View_Bike.Location = new System.Drawing.Point(71, 182);
+            this.dgv_View_Bike.Location = new System.Drawing.Point(-2, 95);
+            this.dgv_View_Bike.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_View_Bike.Name = "dgv_View_Bike";
             this.dgv_View_Bike.ReadOnly = true;
             this.dgv_View_Bike.RowTemplate.Height = 24;
-            this.dgv_View_Bike.Size = new System.Drawing.Size(1797, 701);
+            this.dgv_View_Bike.Size = new System.Drawing.Size(1381, 665);
             this.dgv_View_Bike.TabIndex = 17;
-            // 
-            // dB_OLA_CAB_Mgt_SystemDataSet3
-            // 
-            this.dB_OLA_CAB_Mgt_SystemDataSet3.DataSetName = "DB_OLA_CAB_Mgt_SystemDataSet3";
-            this.dB_OLA_CAB_Mgt_SystemDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // passengerBikeDetailsBindingSource
-            // 
-            this.passengerBikeDetailsBindingSource.DataMember = "Passenger_Bike_Details";
-            this.passengerBikeDetailsBindingSource.DataSource = this.dB_OLA_CAB_Mgt_SystemDataSet3;
-            // 
-            // passenger_Bike_DetailsTableAdapter
-            // 
-            this.passenger_Bike_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // passengerIdDataGridViewTextBoxColumn
             // 
@@ -208,22 +197,40 @@
             this.chargesDataGridViewTextBoxColumn.Name = "chargesDataGridViewTextBoxColumn";
             this.chargesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // passengerBikeDetailsBindingSource
+            // 
+            this.passengerBikeDetailsBindingSource.DataMember = "Passenger_Bike_Details";
+            this.passengerBikeDetailsBindingSource.DataSource = this.dB_OLA_CAB_Mgt_SystemDataSet3;
+            // 
+            // dB_OLA_CAB_Mgt_SystemDataSet3
+            // 
+            this.dB_OLA_CAB_Mgt_SystemDataSet3.DataSetName = "DB_OLA_CAB_Mgt_SystemDataSet3";
+            this.dB_OLA_CAB_Mgt_SystemDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // passenger_Bike_DetailsTableAdapter
+            // 
+            this.passenger_Bike_DetailsTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_View_Bike_Passenger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1380, 759);
             this.ControlBox = false;
             this.Controls.Add(this.dgv_View_Bike);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_View_Bike_Passenger";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_View_Bike_Passenger";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_View_Bike_Passenger_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Bike)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_OLA_CAB_Mgt_SystemDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passengerBikeDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_OLA_CAB_Mgt_SystemDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }

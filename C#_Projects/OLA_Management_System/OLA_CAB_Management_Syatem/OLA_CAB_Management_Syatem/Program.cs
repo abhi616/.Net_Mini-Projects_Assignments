@@ -15,7 +15,8 @@ namespace OLA_CAB_Management_Syatem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Login());
+            Application.Run(new frm_Loding());
+            //Application.Run(new frm_MDI_OlaCab());
         }
     }
 }

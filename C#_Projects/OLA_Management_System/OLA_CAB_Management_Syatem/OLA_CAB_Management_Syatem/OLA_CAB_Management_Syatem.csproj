@@ -11,7 +11,8 @@
     <RootNamespace>OLA_CAB_Management_Syatem</RootNamespace>
     <AssemblyName>OLA_CAB_Management_Syatem</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,8 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Area_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Area_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bike_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bike_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CarPassenger_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarPassenger_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,6 +96,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Driver_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Driver_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="frm_Add_Area.cs">
       <SubType>Form</SubType>
@@ -101,11 +138,41 @@
     <Compile Include="frm_Add_Vehicle.Designer.cs">
       <DependentUpon>frm_Add_Vehicle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Area_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Area_Report.Designer.cs">
+      <DependentUpon>frm_Area_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Bike_Passenger_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Bike_Passenger_Report.Designer.cs">
+      <DependentUpon>frm_Bike_Passenger_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Car_Passenger_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Car_Passenger_Report.Designer.cs">
+      <DependentUpon>frm_Car_Passenger_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Delete_User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Delete_User.Designer.cs">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Driver_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Driver_Report.Designer.cs">
+      <DependentUpon>frm_Driver_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Loding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Loding.Designer.cs">
+      <DependentUpon>frm_Loding.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
@@ -143,6 +210,12 @@
     <Compile Include="frm_Update_User.Designer.cs">
       <DependentUpon>frm_Update_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Vehicle_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Vehicle_Report.Designer.cs">
+      <DependentUpon>frm_Vehicle_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_View_Area.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,8 +246,31 @@
     <Compile Include="frm_View_Vehicle.Designer.cs">
       <DependentUpon>frm_View_Vehicle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global_Vars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vehicle_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehicle_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Area_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Area_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bike_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bike_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarPassenger_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CarPassenger_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Driver_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_Area.resx">
       <DependentUpon>frm_Add_Area.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,8 +289,23 @@
     <EmbeddedResource Include="frm_Add_Vehicle.resx">
       <DependentUpon>frm_Add_Vehicle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Area_Report.resx">
+      <DependentUpon>frm_Area_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Bike_Passenger_Report.resx">
+      <DependentUpon>frm_Bike_Passenger_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Car_Passenger_Report.resx">
+      <DependentUpon>frm_Car_Passenger_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Delete_User.resx">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Driver_Report.resx">
+      <DependentUpon>frm_Driver_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Loding.resx">
+      <DependentUpon>frm_Loding.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
@@ -210,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Update_User.resx">
       <DependentUpon>frm_Update_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Vehicle_Report.resx">
+      <DependentUpon>frm_Vehicle_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_View_Area.resx">
       <DependentUpon>frm_View_Area.cs</DependentUpon>
@@ -236,6 +350,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vehicle_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vehicle_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="DB_OLA_CAB_Mgt_SystemDataSet.xsc">
       <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet.xsd</DependentUpon>
@@ -292,6 +410,17 @@
     <None Include="DB_OLA_CAB_Mgt_SystemDataSet4.xss">
       <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet5.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet5.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -304,6 +433,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ola-Electric-looking-to-raise-1-billion.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

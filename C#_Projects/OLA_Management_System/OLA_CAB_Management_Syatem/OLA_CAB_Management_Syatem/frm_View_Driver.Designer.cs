@@ -57,9 +57,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(222)))), ((int)(((byte)(35)))));
             this.panel1.Controls.Add(this.lbl_Header);
-            this.panel1.Location = new System.Drawing.Point(-8, -1);
+            this.panel1.Location = new System.Drawing.Point(-6, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2303, 100);
+            this.panel1.Size = new System.Drawing.Size(1727, 81);
             this.panel1.TabIndex = 51;
             // 
             // lbl_Header
@@ -67,9 +68,10 @@
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.White;
-            this.lbl_Header.Location = new System.Drawing.Point(623, -10);
+            this.lbl_Header.Location = new System.Drawing.Point(467, -8);
+            this.lbl_Header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(647, 112);
+            this.lbl_Header.Size = new System.Drawing.Size(515, 89);
             this.lbl_Header.TabIndex = 12;
             this.lbl_Header.Text = "View All Driver";
             // 
@@ -94,11 +96,12 @@
             this.experienceDataGridViewTextBoxColumn,
             this.chargesDataGridViewTextBoxColumn});
             this.dgv_View_Driver.DataSource = this.driverDetailsBindingSource;
-            this.dgv_View_Driver.Location = new System.Drawing.Point(45, 222);
+            this.dgv_View_Driver.Location = new System.Drawing.Point(1, 96);
+            this.dgv_View_Driver.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_View_Driver.Name = "dgv_View_Driver";
             this.dgv_View_Driver.ReadOnly = true;
             this.dgv_View_Driver.RowTemplate.Height = 24;
-            this.dgv_View_Driver.Size = new System.Drawing.Size(1823, 693);
+            this.dgv_View_Driver.Size = new System.Drawing.Size(1367, 654);
             this.dgv_View_Driver.TabIndex = 52;
             // 
             // driverIdDataGridViewTextBoxColumn
@@ -201,15 +204,18 @@
             // 
             // frm_View_Driver
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.ControlBox = false;
             this.Controls.Add(this.dgv_View_Driver);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_View_Driver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Driver";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_View_Driver_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

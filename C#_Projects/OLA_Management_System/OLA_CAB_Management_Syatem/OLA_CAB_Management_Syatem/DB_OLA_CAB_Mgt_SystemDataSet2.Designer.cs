@@ -658,6 +658,8 @@ namespace OLA_CAB_Management_Syatem {
                 }
             }
         }
+
+        public object Area_Detail { get; set; }
     }
 }
 namespace OLA_CAB_Management_Syatem.DB_OLA_CAB_Mgt_SystemDataSet2TableAdapters {

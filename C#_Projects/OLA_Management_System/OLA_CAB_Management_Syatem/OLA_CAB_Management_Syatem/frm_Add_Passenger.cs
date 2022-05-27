@@ -15,10 +15,9 @@ namespace OLA_CAB_Management_Syatem
         public frm_Add_Passenger()
         {
             InitializeComponent();
-           
         }
 
-        double charg,km,dcharg;
+        double charg, km;
         string cb;
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_OLA_CAB_Mgt_System;Integrated Security=True");
 
@@ -79,17 +78,17 @@ namespace OLA_CAB_Management_Syatem
             tb_Mobile_No.Clear();
             tb_LicenceNo.Clear();
             tb_Email_ID.Clear();
-            cmb_Driver_Name.SelectedIndex = -1;
+            cmb_Area.SelectedIndex = -1;
             tb_Charges.Clear();
             tb_Alternate_Mobile_No.Clear();
             tb_Address.Clear();
             tb_Aadhar_No.Clear();
-            cmb_Area.SelectedIndex = -1;
+            cmb_Driver_Name.SelectedIndex = -1;
             cb_yes.Checked = false;
             lbl_Driver_Name.Visible = false;
             cmb_Driver_Name.Visible = false;
 
-            dcharg = 0;
+          //  dcharg = 0;
             charg = 0;
             km = 0;
             tb_Name.Focus();
@@ -102,11 +101,11 @@ namespace OLA_CAB_Management_Syatem
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
-            Cmd.CommandText = "Select Distinct(Area_Name) from Area_Details";
+            Cmd.CommandText = "Select Distinct(Area_Name) from Area_Detail";
 
             SqlDataReader sdr = Cmd.ExecuteReader();
 
-            while(sdr.Read())
+            while (sdr.Read())
             {
                 cmb_Area.Items.Add(sdr.GetString(sdr.GetOrdinal("Area_Name")));
             }
@@ -124,13 +123,13 @@ namespace OLA_CAB_Management_Syatem
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
-            Cmd.CommandText = "Select Km,Km_Price from Area_Details where Area_Name = '" + cmb_Area.Text + "'";
+            Cmd.CommandText = "Select Km,Bike_Km_Price from Area_Detail where Area_Name = '" + cmb_Area.Text + "'";
 
             SqlDataReader sdr = Cmd.ExecuteReader();
 
-            while(sdr.Read())
+            while (sdr.Read())
             {
-                charg = Convert.ToDouble(sdr["Km_Price"].ToString());
+                charg = Convert.ToDouble(sdr["Bike_Km_Price"].ToString());
                 km = Convert.ToDouble(sdr["Km"].ToString());
 
                 tb_Charges.Text = (charg * km).ToString();
@@ -138,28 +137,6 @@ namespace OLA_CAB_Management_Syatem
 
             Cmd.Dispose();
             sdr.Dispose();
-
-            Cmd.Connection = Con;
-            Cmd.CommandText = "Select Charges from Driver_Details where Driver_Name = '" + cmb_Driver_Name.Text + "'";
-
-            SqlDataReader sdr1 = Cmd.ExecuteReader();
-
-            while(sdr1.Read())
-            {
-                dcharg = Convert.ToDouble(sdr1["Charges"].ToString());
-
-                if (cb == "Yes")
-                {
-                    tb_Charges.Text = (charg * km * dcharg).ToString();
-                }
-                else if (cb == "No")
-                {
-                    tb_Charges.Text = (charg * km).ToString();
-                }
-            }
-
-            Cmd.Dispose();
-            sdr1.Dispose();
 
             Con_Close();
         }
@@ -175,7 +152,7 @@ namespace OLA_CAB_Management_Syatem
 
             SqlDataReader sdr = Cmd.ExecuteReader();
 
-            while(sdr.Read())
+            while (sdr.Read())
             {
                 cmb_Driver_Name.Items.Add(sdr.GetString(sdr.GetOrdinal("Driver_Name")));
             }
@@ -185,10 +162,17 @@ namespace OLA_CAB_Management_Syatem
 
             Con_Close();
         }
+        private void frm_Add_Passenger_Load(object sender, EventArgs e)
+        {
+            Clear_Controls();
+            Bind_Area();
+            Bind_Driver();
+        }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (tb_Aadhar_No.Text != "" && tb_Address.Text != "" && tb_Charges.Text != "" && tb_LicenceNo.Text != "" && tb_Mobile_No.Text != "" && tb_Name.Text != "" && cmb_Area.Text != "" )
+
+            if (tb_Aadhar_No.Text != "" && tb_Address.Text != "" && tb_Charges.Text != "" && tb_LicenceNo.Text != "" && tb_Mobile_No.Text != "" && tb_Name.Text != "" && cmb_Area.Text != "")
             {
                 if (cb_yes.Checked)
                 {
@@ -215,8 +199,8 @@ namespace OLA_CAB_Management_Syatem
                 Cmd.Parameters.Add("name", SqlDbType.NVarChar).Value = tb_Name.Text;
                 Cmd.Parameters.Add("date", SqlDbType.Date).Value = dtp_Date.Text;
                 Cmd.Parameters.Add("mobno", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
-                Cmd.Parameters.Add("status",SqlDbType.NVarChar).Value = cb;
-                Cmd.Parameters.Add("driver",SqlDbType.VarChar).Value = cmb_Driver_Name.Text;
+                Cmd.Parameters.Add("status", SqlDbType.NVarChar).Value = cb;
+                Cmd.Parameters.Add("driver", SqlDbType.VarChar).Value = cmb_Driver_Name.Text;
                 Cmd.Parameters.Add("aadhar", SqlDbType.Decimal).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("licence", SqlDbType.NVarChar).Value = tb_LicenceNo.Text;
                 Cmd.Parameters.Add("address", SqlDbType.NVarChar).Value = tb_Address.Text;
@@ -229,7 +213,7 @@ namespace OLA_CAB_Management_Syatem
                 }
                 else
                 {
-                     Cmd.Parameters.Add("alternateno", SqlDbType.Decimal).Value = "0";
+                    Cmd.Parameters.Add("alternateno", SqlDbType.Decimal).Value = "0";
                 }
 
                 if (tb_Email_ID.Text != "")
@@ -261,7 +245,7 @@ namespace OLA_CAB_Management_Syatem
                     Clear_Controls();
                 }
 
-               
+
                 Con_Close();
             }
             else
@@ -272,7 +256,6 @@ namespace OLA_CAB_Management_Syatem
 
         private void cb_yes_CheckedChanged(object sender, EventArgs e)
         {
-
             if (cb_yes.Checked)
             {
                 cb = "Yes";
@@ -295,25 +278,12 @@ namespace OLA_CAB_Management_Syatem
             }
         }
 
-        private void frm_Add_Passenger_Load(object sender, EventArgs e)
-        {
-            Clear_Controls();
-            Bind_Area();
-            Bind_Driver();
-        }
-
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
-            
         }
 
-        private void cmb_Area_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Bind_Charges();
-        }
-
-        private void tb_Name_KeyPress(object sender, KeyPressEventArgs e)
+        private void Only_Char(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
@@ -321,23 +291,30 @@ namespace OLA_CAB_Management_Syatem
             }
         }
 
-        private void dtp_Date_ValueChanged(object sender, EventArgs e)
-        {
-            dtp_Date.MinDate = dtp_Date.MaxDate = DateTime.Now;
-        }
-
         private void Only_Numerics(object sender, KeyPressEventArgs e)
         {
+
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void cmb_Driver_Name_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmb_Area_SelectedIndexChanged(object sender, EventArgs e)
         {
             Bind_Charges();
         }
+
+        private void cmb_Driver_Name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Bind_Charges();
+        }
+
+        private void dtp_Date_ValueChanged_1(object sender, EventArgs e)
+        {
+            dtp_Date.MinDate = dtp_Date.MaxDate = DateTime.Now;
+        }
+
 
 
     }

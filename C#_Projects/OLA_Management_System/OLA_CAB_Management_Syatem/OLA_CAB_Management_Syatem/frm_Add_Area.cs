@@ -45,7 +45,7 @@ namespace OLA_CAB_Management_Syatem
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
-            Cmd.CommandText = "Select Count (Area_Id) From Area_Details";
+            Cmd.CommandText = "Select Count (Area_Id) From Area_Detail";
 
             Cnt = Convert.ToInt32(Cmd.ExecuteScalar());
 
@@ -54,7 +54,7 @@ namespace OLA_CAB_Management_Syatem
             if (Cnt > 0)
             {
                 Cmd.Connection = Con;
-                Cmd.CommandText = "Select Max(Area_Id) from Area_Details";
+                Cmd.CommandText = "Select Max(Area_Id) from Area_Detail";
 
                 Cnt = Convert.ToInt32(Cmd.ExecuteScalar()) + 1;
             }
@@ -73,25 +73,27 @@ namespace OLA_CAB_Management_Syatem
             tb_Area_Id.Text = Convert.ToString(Auto_Increment());
             tb_Name.Text = "";
             tb_kilometer.Text = "";
-            tb_Kmper_Price.Text = "";
+            tb_Bike_Price.Text = "";
+            tb_Car_Price.Clear();
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
 
-            if (tb_Area_Id.Text != "" && tb_Name.Text != "" && tb_kilometer.Text != "" && tb_Kmper_Price.Text != "")
+            if (tb_Area_Id.Text != "" && tb_Name.Text != "" && tb_kilometer.Text != "" && tb_Bike_Price.Text != "")
             {
                 Con_Open();
 
                 SqlCommand Cmd = new SqlCommand();
 
                 Cmd.Connection = Con;
-                Cmd.CommandText = "Insert into Area_Details(Area_Id,Area_Name,Km,Km_Price) Values(@A_ID,@A_Name,@Km,@Km_Price)";
+                Cmd.CommandText = "Insert into Area_Detail(Area_Id,Area_Name,Km,Bike_Km_Price,Car_Km_Price) Values(@A_ID,@A_Name,@Km,@Bike_Price,@Car_Price)";
 
                 Cmd.Parameters.Add("A_ID", SqlDbType.Int).Value = tb_Area_Id.Text;
                 Cmd.Parameters.Add("A_Name", SqlDbType.NVarChar).Value = tb_Name.Text;
                 Cmd.Parameters.Add("Km", SqlDbType.Float).Value = tb_kilometer.Text;
-                Cmd.Parameters.Add("Km_Price", SqlDbType.Int).Value = tb_Kmper_Price.Text;
+                Cmd.Parameters.Add("Bike_Price", SqlDbType.Float).Value = tb_Bike_Price.Text;
+                Cmd.Parameters.Add("Car_Price", SqlDbType.Float).Value = tb_Car_Price.Text;
 
                 Cmd.ExecuteNonQuery();
 
@@ -122,6 +124,5 @@ namespace OLA_CAB_Management_Syatem
         {
             Clear_Controls();
         }
-
     }
 }

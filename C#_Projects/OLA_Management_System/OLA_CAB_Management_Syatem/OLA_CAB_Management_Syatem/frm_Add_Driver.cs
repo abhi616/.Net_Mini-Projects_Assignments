@@ -87,10 +87,15 @@ namespace OLA_CAB_Management_Syatem
             return Cnt;
         }
 
+        private void frm_Add_Driver_Load(object sender, EventArgs e)
+        {
+            Clear_Controls();
+        }
+
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            Con_Open();
 
+            Con_Open();
             if (tb_Driver_ID.Text != "" && tb_Name.Text != "" && tb_Mobile_No.Text != "" && tb_Aadhar_No.Text != "" && tb_Pan_No.Text != "" && tb_Age.Text != "" && tb_Licence_No.Text != "" && tb_Charges.Text != "" && tb_Address.Text != "" && tb_Experience.Text != "")
             {
                 SqlCommand cmd = new SqlCommand();
@@ -103,7 +108,7 @@ namespace OLA_CAB_Management_Syatem
                 cmd.Parameters.Add("Mobile_No", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
                 cmd.Parameters.Add("Alternate_Mobile_No", SqlDbType.Decimal).Value = tb_Alternate_Mobile_No.Text;
                 cmd.Parameters.Add("Aadhar_No", SqlDbType.Decimal).Value = tb_Aadhar_No.Text;
-                cmd.Parameters.Add("Pan_No", SqlDbType.Decimal).Value = tb_Pan_No.Text;
+                cmd.Parameters.Add("Pan_No", SqlDbType.NVarChar).Value = tb_Pan_No.Text;
                 cmd.Parameters.Add("Licence_No", SqlDbType.NVarChar).Value = tb_Licence_No.Text;
                 cmd.Parameters.Add("Email_id", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
                 cmd.Parameters.Add("Address", SqlDbType.NVarChar).Value = tb_Address.Text;
@@ -112,8 +117,7 @@ namespace OLA_CAB_Management_Syatem
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Driver Added Successfully", "Sucess", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("Driver Added Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Controls();
             }
             else
@@ -122,12 +126,6 @@ namespace OLA_CAB_Management_Syatem
             }
 
             Con_Close();
-
-        }
-
-        private void frm_Add_Driver_Load(object sender, EventArgs e)
-        {
-            Clear_Controls();
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
@@ -135,47 +133,20 @@ namespace OLA_CAB_Management_Syatem
             Clear_Controls();
         }
 
-        private void tb_Driver_ID_KeyPress(object sender, KeyPressEventArgs e)
+        private void Only_Char(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && (!char.IsDigit(e.KeyChar)))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
-        private void tb_Mobile_No_KeyPress(object sender, KeyPressEventArgs e)
+        private void Only_Numerics(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && (!char.IsDigit(e.KeyChar)))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
-
-        private void tb_Alternate_Mobile_No_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && (!char.IsDigit(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tb_Aadhar_No_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && (!char.IsDigit(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void tb_Charges_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && (!char.IsDigit(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
-        }
-
-
     }
 }
-

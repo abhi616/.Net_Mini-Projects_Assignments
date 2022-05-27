@@ -69,5 +69,15 @@ namespace OLA_CAB_Management_Syatem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ola_Electric_looking_to_raise_1_billion {
+            get {
+                object obj = ResourceManager.GetObject("Ola-Electric-looking-to-raise-1-billion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
