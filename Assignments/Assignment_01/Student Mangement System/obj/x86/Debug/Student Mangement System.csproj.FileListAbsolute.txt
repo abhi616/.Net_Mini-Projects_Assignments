@@ -9,3 +9,6 @@ C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Stude
 C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student Mangement System.csprojResolveAssemblyReference.cache
 C:\Abhi C#\Student Mangement System\Student Mangement System\obj\x86\Debug\Student_Mangement_System.frm_View_All_Students.resources
 C:\Abhi C#\Student Mangement System\Student Mangement System\bin\Debug\Student Mangement System.exe.config
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_01\Student Mangement System\bin\Debug\Student Mangement System.exe.config
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_01\Student Mangement System\obj\x86\Debug\Student Mangement System.exe
+D:\C# Assignments\C# Assignments + Project\Assignments\Assignment_01\Student Mangement System\obj\x86\Debug\Student Mangement System.pdb

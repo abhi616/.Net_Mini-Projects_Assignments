@@ -38,7 +38,7 @@ namespace Student_Mangement_System
                 MessageBox.Show("Login Successful...!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                 frm_Add_New_Student Obj = new frm_Add_New_Student();
-
+                
                 Obj.Show();
 
                 this.Hide();
