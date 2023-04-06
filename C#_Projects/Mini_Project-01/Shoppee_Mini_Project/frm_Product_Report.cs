@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Shoppee_Mini_Project
 {
@@ -16,13 +17,28 @@ namespace Shoppee_Mini_Project
             InitializeComponent();
         }
 
+        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Mini_Shoppee_DB;Integrated Security=True");
+
         private void frm_Product_Report_Load(object sender, EventArgs e)
         {
-            ProductReport crpt = new ProductReport();
+            string sqlStr = "Select * from Product_Details";
 
-            crpt.Load(@"D:\C# Assignments\C# Assignments + Project\C#_Projects\Mini_Project-01\Shoppee_Mini_Project\ProductReport.rpt");
+            SqlDataAdapter da = new SqlDataAdapter(sqlStr, Con);
 
-            crystalReportViewer1.ReportSource = crpt;
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Product_Details");
+
+            ProductReport pr = new ProductReport();
+            pr.SetDataSource(ds);
+
+            crystalReportViewer1.ReportSource = pr;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_Product_Menu cm = new frm_Product_Menu();
+            cm.Show();
+            this.Hide();
         }
     }
 }

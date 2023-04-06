@@ -38,17 +38,19 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 626);
+            this.progressBar1.Location = new System.Drawing.Point(100, 775);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1326, 23);
+            this.progressBar1.Size = new System.Drawing.Size(1768, 28);
             this.progressBar1.TabIndex = 0;
             // 
             // btn_Start
             // 
             this.btn_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Start.Location = new System.Drawing.Point(623, 668);
+            this.btn_Start.Location = new System.Drawing.Point(952, 830);
+            this.btn_Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Start.Name = "btn_Start";
-            this.btn_Start.Size = new System.Drawing.Size(101, 34);
+            this.btn_Start.Size = new System.Drawing.Size(135, 42);
             this.btn_Start.TabIndex = 2;
             this.btn_Start.Text = "Start";
             this.btn_Start.UseVisualStyleBackColor = true;
@@ -62,26 +64,27 @@
             // 
             this.pictureBox1.Image = global::OLA_CAB_Management_Syatem.Properties.Resources.Ola_Electric_looking_to_raise_1_billion;
             this.pictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1371, 742);
+            this.pictureBox1.Size = new System.Drawing.Size(2100, 1060);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // frm_Loding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 739);
+            this.ClientSize = new System.Drawing.Size(1936, 1067);
             this.Controls.Add(this.btn_Start);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_Loding";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Loding";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

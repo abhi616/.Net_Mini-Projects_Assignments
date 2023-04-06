@@ -45,7 +45,7 @@
             this.btn_Add_New_Product.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add_New_Product.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Add_New_Product.Location = new System.Drawing.Point(285, 153);
-            this.btn_Add_New_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Add_New_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Add_New_Product.Name = "btn_Add_New_Product";
             this.btn_Add_New_Product.Size = new System.Drawing.Size(477, 98);
             this.btn_Add_New_Product.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.btn_Update_Product.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update_Product.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Update_Product.Location = new System.Drawing.Point(285, 302);
-            this.btn_Update_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Update_Product.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Update_Product.Name = "btn_Update_Product";
             this.btn_Update_Product.Size = new System.Drawing.Size(477, 98);
             this.btn_Update_Product.TabIndex = 2;
@@ -77,7 +77,7 @@
             this.btn_View_Product_List.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_View_Product_List.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_View_Product_List.Location = new System.Drawing.Point(285, 457);
-            this.btn_View_Product_List.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_View_Product_List.Margin = new System.Windows.Forms.Padding(4);
             this.btn_View_Product_List.Name = "btn_View_Product_List";
             this.btn_View_Product_List.Size = new System.Drawing.Size(477, 98);
             this.btn_View_Product_List.TabIndex = 3;
@@ -93,7 +93,7 @@
             this.btn_Back.ForeColor = System.Drawing.Color.Crimson;
             this.btn_Back.Image = ((System.Drawing.Image)(resources.GetObject("btn_Back.Image")));
             this.btn_Back.Location = new System.Drawing.Point(0, 1);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(231, 132);
             this.btn_Back.TabIndex = 4;
@@ -108,7 +108,7 @@
             this.btn_LogOut.ForeColor = System.Drawing.Color.Crimson;
             this.btn_LogOut.Image = ((System.Drawing.Image)(resources.GetObject("btn_LogOut.Image")));
             this.btn_LogOut.Location = new System.Drawing.Point(832, 1);
-            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btn_LogOut.Name = "btn_LogOut";
             this.btn_LogOut.Size = new System.Drawing.Size(147, 142);
             this.btn_LogOut.TabIndex = 5;
@@ -144,12 +144,13 @@
             this.Controls.Add(this.btn_Update_Product);
             this.Controls.Add(this.btn_Add_New_Product);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Product_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Menu";
+            this.Load += new System.EventHandler(this.frm_Product_Menu_Load);
             this.ResumeLayout(false);
 
         }

@@ -68,5 +68,10 @@ namespace Shoppee_Mini_Project
             cr.Show();
         }
 
+        private void frm_Product_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

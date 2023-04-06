@@ -60,6 +60,12 @@
       <DependentUpon>CustomerReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="CustomerReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CustomerReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_Customer.resx">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
